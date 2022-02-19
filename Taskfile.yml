@@ -1,0 +1,14 @@
+version: 3
+
+dotenv:
+  - ".env"
+
+tasks:
+  run:
+    cmds:
+      - flask run
+ 
+  run-docker:
+    cmds:
+      - sudo docker-compose up -d
+      - sudo docker-compose ps
